@@ -1,0 +1,6 @@
+Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub
+Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub
+Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
