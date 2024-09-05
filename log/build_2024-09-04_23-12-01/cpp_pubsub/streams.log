@@ -1,0 +1,12 @@
+[0.007s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.063s] [ 75%] Built target listener
+[0.063s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[1.852s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.852s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:84:37:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_RGB[m[K’ was not declared in this scope
+[1.852s]    84 |   cv::Mat img = cv::imread(argv[1], [01;31m[KCV_RGB[m[K);
+[1.852s]       |                                     [01;31m[K^~~~~~[m[K
+[2.352s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[2.352s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+[2.352s] gmake: *** [Makefile:146: all] Error 2
+[2.356s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

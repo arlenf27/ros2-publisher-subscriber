@@ -31,6 +31,7 @@
 #include "image_transport/image_transport.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "cv_bridge/cv_bridge.h"
+#include "opencv2/imgcodecs.hpp"
 
 using namespace std::chrono_literals;
 
@@ -81,7 +82,7 @@ int main(int argc, char * argv[])
   auto node = rclcpp::Node::make_shared("talker");
   image_transport::ImageTransport it(node);
   image_transport::Publisher pub = it.advertise("imagetopic", 10);
-  cv::Mat img = cv::imread(argv[1], CV_8UC3);
+  cv::Mat img = cv::imread(argv[1], cv::IMREAD_COLOR);
   sensor_msgs::msg::Image::SharedPtr msg = cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", img).toImageMsg();
 
   rclcpp::Rate loop_rate(5);
