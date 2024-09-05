@@ -21,7 +21,7 @@ This program was only tested on Ubuntu 22 ARM64!
 6. Follow steps 3 - 8 of "Running the Built Program" section to run the built program. 
 
 ## How This Program Was Developed
-Note: Most of the "handwritten" code is in "/src/cpp_pubsub/src/". The two C++ files are the publisher and subscriber source code. The CMakeLists.txt and package.xml files are located in "/src/cpp_pubsub/". 
+Note: Most of the "handwritten" code is in "/src/cpp_pubsub/src/". The two C++ files are the [publisher] (/src/cpp_pubsub/src/publisher_member_function.cpp) and [subscriber] (/src/cpp_pubsub/src/subscriber_member_function.cpp) source code. The CMakeLists.txt and package.xml files are located in "/src/cpp_pubsub/". 
 1. The base of this program is from the ROS2.org tutorial at [docs.ROS.org: Writing a simple publisher and subscriber (C++)] (https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html). When finished with this tutorial, a working STRING publisher and subscriber were developed. 
 2. Additional code was added and original code was modified to develop an image publisher and subscriber. 
 3. Additional dependencies not used in the original tutorial are as follows: **Image_transport**, **CV_bridge**, **OpenCV**. 
