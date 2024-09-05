@@ -1,0 +1,96 @@
+[0.005s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.034s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.152s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.153s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.181s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.184s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.189s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.210s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.247s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.249s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.327s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.383s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.420s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[0.491s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.492s] -- Configured cppcheck include dirs: 
+[0.492s] -- Configured cppcheck exclude dirs and/or files: 
+[0.492s] -- Added test 'lint_cmake' to check CMake code style
+[0.493s] -- Added test 'uncrustify' to check C / C++ code style
+[0.493s] -- Configured uncrustify additional arguments: 
+[0.493s] -- Added test 'xmllint' to check XML markup files
+[0.494s] -- Configuring done
+[0.505s] -- Generating done
+[0.506s] -- Build files have been written to: /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+[0.521s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.522s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.531s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.546s] [ 75%] Built target talker
+[2.780s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:29:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensors[m[K’ does not name a type
+[2.780s]    66 |   void topic_callback(const [01;31m[Ksensors[m[K::msg::Image::SharedPtr msg) const
+[2.780s]       |                             [01;31m[K^~~~~~~[m[K
+[2.780s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:41:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.780s]    66 |   void topic_callback(const sensors::msg[01;31m[K::[m[KImage::SharedPtr msg) const
+[2.780s]       |                                         [01;31m[K^~[m[K
+[2.780s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:41:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.780s]    66 |   void topic_callback[34m[K([m[Kconst sensors::msg[01;31m[K:[m[K[32m[K:[m[KImage::SharedPtr msg) const
+[2.780s]       |                      [34m[K~[m[K                  [01;31m[K^[m[K[32m[K~[m[K
+[2.780s]       |                                         [32m[K)[m[K
+[2.780s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.780s]    66 |   void topic_callback(const sensors::[01;31m[Kmsg[m[K::Image::SharedPtr msg) const
+[2.780s]       |                                      [01;31m[K^~~[m[K
+[2.780s]       |                                         [32m[K;[m[K
+[2.784s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:43:[m[K [01;31m[Kerror: [m[K‘[01m[KImage[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[2.784s]    66 |   void topic_callback(const sensors::msg::[01;31m[KImage[m[K::SharedPtr msg) const
+[2.784s]       |                                           [01;31m[K^~~~~[m[K
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensors[m[K’ was not declared in this scope
+[2.795s]    70 |   rclcpp::Subscription<[01;31m[Ksensors[m[K::msg::Image>::SharedPtr subscription_;
+[2.795s]       |                        [01;31m[K^~~~~~~[m[K
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.795s]    70 |   rclcpp::Subscription<sensors::msg::Image[01;31m[K>[m[K::SharedPtr subscription_;
+[2.795s]       |                                           [01;31m[K^[m[K
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.795s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.795s]    70 |   rclcpp::Subscription<sensors::msg::Image>::[01;31m[KSharedPtr[m[K subscription_;
+[2.795s]       |                                              [01;31m[K^~~~~~~~~[m[K
+[2.795s]       |                                                       [32m[K;[m[K
+[2.797s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:56:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.797s]    70 |   rclcpp::Subscription<sensors::msg::Image>::SharedPtr [01;31m[Ksubscription_[m[K;
+[2.797s]       |                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[2.797s]       |                                                        [32m[Krmw_subscription_t[m[K
+[2.812s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KImageSubscriber::ImageSubscriber()[m[K’:
+[2.812s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.812s]    61 |     [01;31m[Ksubscription_[m[K = this->create_subscription<sensors::msg::Image>(
+[2.812s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[2.812s]       |     [32m[Krmw_subscription_t[m[K
+[2.822s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensors[m[K’ was not declared in this scope
+[2.822s]    61 |     subscription_ = this->create_subscription<[01;31m[Ksensors[m[K::msg::Image>(
+[2.822s]       |                                               [01;31m[K^~~~~~~[m[K
+[2.822s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.822s]    61 |     subscription_ = this->[01;31m[Kcreate_subscription<sensors::msg::Image>[m[K(
+[2.822s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.825s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImageSubscriber::create_subscription<<expression error> >(const char [9], int, std::_Bind_helper<false, void (ImageSubscriber::*)(...), ImageSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[2.825s]    61 |     subscription_ = [01;31m[Kthis->create_subscription<sensors::msg::Image>([m[K
+[2.825s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.825s]    62 | [01;31m[K      "imgtopic", 10, std::bind(&ImageSubscriber::topic_callback, this, _1))[m[K;
+[2.825s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.825s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.825s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.825s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26[m[K:
+[2.825s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.825s]    92 | [01;36m[KNode[m[K::create_subscription(
+[2.825s]       | [01;36m[K^~~~[m[K
+[2.825s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.825s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.825s]    61 |     subscription_ = [01;31m[Kthis->create_subscription<sensors::msg::Image>([m[K
+[2.825s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.825s]    62 | [01;31m[K      "imgtopic", 10, std::bind(&ImageSubscriber::topic_callback, this, _1))[m[K;
+[2.825s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.662s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[4.662s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[4.662s] gmake: *** [Makefile:146: all] Error 2
+[4.663s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

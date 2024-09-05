@@ -1,0 +1,15 @@
+[0.006s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.049s] [ 50%] Built target listener
+[0.051s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[1.410s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.410s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:87:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’ has no member named ‘[01m[Kok[m[K’
+[1.410s]    87 |   while (node.[01;31m[Kok[m[K()) {
+[1.410s]       |               [01;31m[K^~[m[K
+[1.413s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:89:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspinOnce[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[1.413s]    89 |     rclcpp::[01;31m[KspinOnce[m[K();
+[1.413s]       |             [01;31m[K^~~~~~~~[m[K
+[1.849s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[1.849s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+[1.849s] gmake: *** [Makefile:146: all] Error 2
+[1.852s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

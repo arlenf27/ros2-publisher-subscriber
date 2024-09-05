@@ -1,0 +1,24 @@
+[0.007s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.054s] [ 50%] Built target talker
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.070s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.302s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.302s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26[m[K:
+[2.302s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid ImageSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr) const[m[K’:
+[2.302s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:68:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _data_type = class std::vector<unsigned char, std::allocator<unsigned char> >[m[K’ {aka ‘[01m[Kclass std::vector<unsigned char, std::allocator<unsigned char> >[m[K’} has no member named ‘[01m[Kc_str[m[K’
+[2.302s]    68 |     RCLCPP_INFO(this->get_logger(), "Subscribing Image: '%s'", msg->data.[01;31m[Kc_str[m[K());
+[2.302s]       |                                                                          [01;31m[K^~~~~[m[K
+[4.600s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[4.601s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[4.601s] gmake: *** [Makefile:146: all] Error 2
+[4.602s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

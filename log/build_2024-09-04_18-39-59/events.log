@@ -1,0 +1,111 @@
+[0.000000] (-) TimerEvent: {}
+[0.000331] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.000351] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.004588] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.005043] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.005515] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub', '--', '-j2', '-l2'], 'cwd': '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'arlen1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arlen1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'arlen1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arlen1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/arlen-VMWareAppleSilicon:@/tmp/.ICE-unix/1546,unix/arlen-VMWareAppleSilicon:/tmp/.ICE-unix/1546'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3ecacd66_9386_451c_9a99_2e4127e99739'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O3UUT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble')]), 'shell': False}
+[0.056666] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.066753] (cpp_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o\x1b[0m\n'}
+[0.070492] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.099440] (-) TimerEvent: {}
+[0.202587] (-) TimerEvent: {}
+[0.302907] (-) TimerEvent: {}
+[0.403266] (-) TimerEvent: {}
+[0.503562] (-) TimerEvent: {}
+[0.603955] (-) TimerEvent: {}
+[0.704327] (-) TimerEvent: {}
+[0.804691] (-) TimerEvent: {}
+[0.905138] (-) TimerEvent: {}
+[1.005403] (-) TimerEvent: {}
+[1.107605] (-) TimerEvent: {}
+[1.207999] (-) TimerEvent: {}
+[1.308369] (-) TimerEvent: {}
+[1.408670] (-) TimerEvent: {}
+[1.509045] (-) TimerEvent: {}
+[1.609403] (-) TimerEvent: {}
+[1.709791] (-) TimerEvent: {}
+[1.810594] (-) TimerEvent: {}
+[1.910950] (-) TimerEvent: {}
+[2.011317] (-) TimerEvent: {}
+[2.112601] (-) TimerEvent: {}
+[2.213276] (-) TimerEvent: {}
+[2.313602] (-) TimerEvent: {}
+[2.414013] (-) TimerEvent: {}
+[2.514696] (-) TimerEvent: {}
+[2.615050] (-) TimerEvent: {}
+[2.716731] (-) TimerEvent: {}
+[2.817055] (-) TimerEvent: {}
+[2.917401] (-) TimerEvent: {}
+[3.017752] (-) TimerEvent: {}
+[3.118076] (-) TimerEvent: {}
+[3.218347] (-) TimerEvent: {}
+[3.320750] (-) TimerEvent: {}
+[3.422150] (-) TimerEvent: {}
+[3.522489] (-) TimerEvent: {}
+[3.622864] (-) TimerEvent: {}
+[3.723126] (-) TimerEvent: {}
+[3.823483] (-) TimerEvent: {}
+[3.923908] (-) TimerEvent: {}
+[4.024211] (-) TimerEvent: {}
+[4.125590] (-) TimerEvent: {}
+[4.227655] (-) TimerEvent: {}
+[4.327921] (-) TimerEvent: {}
+[4.428280] (-) TimerEvent: {}
+[4.528630] (-) TimerEvent: {}
+[4.628944] (-) TimerEvent: {}
+[4.730724] (-) TimerEvent: {}
+[4.830984] (-) TimerEvent: {}
+[4.931350] (-) TimerEvent: {}
+[5.031677] (-) TimerEvent: {}
+[5.132008] (-) TimerEvent: {}
+[5.208617] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[5.232142] (-) TimerEvent: {}
+[5.332685] (-) TimerEvent: {}
+[5.433044] (-) TimerEvent: {}
+[5.533689] (-) TimerEvent: {}
+[5.612371] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] Built target talker\n'}
+[5.634789] (-) TimerEvent: {}
+[5.735583] (-) TimerEvent: {}
+[5.836319] (-) TimerEvent: {}
+[5.937087] (-) TimerEvent: {}
+[6.037927] (-) TimerEvent: {}
+[6.138840] (-) TimerEvent: {}
+[6.239830] (-) TimerEvent: {}
+[6.340138] (-) TimerEvent: {}
+[6.441411] (-) TimerEvent: {}
+[6.542584] (-) TimerEvent: {}
+[6.643783] (-) TimerEvent: {}
+[6.745154] (-) TimerEvent: {}
+[6.845698] (-) TimerEvent: {}
+[6.872595] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable listener\x1b[0m\n'}
+[6.946596] (-) TimerEvent: {}
+[7.046844] (-) TimerEvent: {}
+[7.147100] (-) TimerEvent: {}
+[7.158469] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target listener\n'}
+[7.165066] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[7.187588] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[7.194521] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub'], 'cwd': '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'arlen1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arlen1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'arlen1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arlen1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/arlen-VMWareAppleSilicon:@/tmp/.ICE-unix/1546,unix/arlen-VMWareAppleSilicon:/tmp/.ICE-unix/1546'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3ecacd66_9386_451c_9a99_2e4127e99739'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O3UUT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble')]), 'shell': False}
+[7.199279] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.199509] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[7.200405] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""\n'}
+[7.200505] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[7.200829] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener\n'}
+[7.202911] (cpp_pubsub) StdoutLine: {'line': b'-- Set runtime path of "/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""\n'}
+[7.203039] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[7.203089] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[7.203151] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[7.203255] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[7.203295] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[7.203365] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[7.203398] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[7.203438] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[7.203495] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[7.203533] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[7.203573] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[7.204076] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[7.204311] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[7.204355] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[7.204385] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[7.205636] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[7.227685] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[7.228095] (-) EventReactorShutdown: {}

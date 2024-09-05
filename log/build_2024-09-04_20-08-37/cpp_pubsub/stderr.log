@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: in function `main':
+publisher_member_function.cpp:(.text+0x188): undefined reference to `cv::waitKey(int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:181: talker] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

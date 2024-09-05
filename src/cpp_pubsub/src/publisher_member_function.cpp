@@ -19,6 +19,8 @@
  *
  * Modifications Made: 
  * 1. Left comments on relevant code
+ * 2. Created code to publish image
+ * 3. Created code to convert image from Open CV format to sensors img
  */
 
 #include <chrono>
@@ -26,6 +28,9 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "image_transport/image_transport.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "cv_bridge/cv_bridge.h"
 
 using namespace std::chrono_literals;
 
@@ -50,8 +55,8 @@ private:
   void timer_callback()
   {
     auto message = std_msgs::msg::String();
-    message.data = "Hello, world! " + std::to_string(count_++);
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+    message.data = std::to_string(count_++);
+    RCLCPP_INFO(this->get_logger(), "Publishing String: '%s'", message.data.c_str());
     publisher_->publish(message);
   }
 
@@ -72,7 +77,19 @@ int main(int argc, char * argv[])
   /*
    * Processes data from the node
    */
-  rclcpp::spin(std::make_shared<MinimalPublisher>());
+  //rclcpp::spin(std::make_shared<MinimalPublisher>());
+  auto node = rclcpp::Node::make_shared("talker");
+  image_transport::ImageTransport it(node);
+  image_transport::Publisher pub = it.advertise("imagetopic", 10);
+  cv::Mat img = cv::imread(argv[1], CV_8UC3);
+  sensor_msgs::msg::Image::SharedPtr msg = cv_bridge::CvImage(std_msgs::msg::Header(), "rgb8", img).toImageMsg();
+
+  rclcpp::Rate loop_rate(5);
+  while (rclcpp::ok()) {
+    pub.publish(msg);
+    rclcpp::spin_some(node);
+    loop_rate.sleep();
+  }
   rclcpp::shutdown();
   return 0;
 }

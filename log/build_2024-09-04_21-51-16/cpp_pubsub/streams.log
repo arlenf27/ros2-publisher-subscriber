@@ -1,0 +1,32 @@
+[0.006s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.049s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.294s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[2.520s] [ 75%] Built target talker
+[3.019s] [100%] [32m[1mLinking CXX executable listener[0m
+[3.239s] [100%] Built target listener
+[3.244s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[3.268s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+[3.271s] -- Install configuration: ""
+[3.271s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker
+[3.271s] -- Set runtime path of "/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker
+[3.272s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener
+[3.272s] -- Set runtime path of "/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[3.272s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[3.273s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[3.273s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[3.273s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[3.273s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[3.273s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[3.274s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[3.274s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[3.274s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[3.274s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[3.274s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub

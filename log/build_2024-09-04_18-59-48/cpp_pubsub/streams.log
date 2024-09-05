@@ -1,0 +1,50 @@
+[0.008s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.063s] [ 50%] Built target talker
+[0.067s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.287s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.287s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26[m[K:
+[2.287s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid ImageSubscriber::topic_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr) const[m[K’:
+[2.287s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:68:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.287s]    68 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"Subscribing Image: '%s'"[m[K, msg);
+[2.287s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.287s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:68:59:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.287s]    68 |     RCLCPP_INFO(this->get_logger(), "Subscribing Image: '[01;36m[K%s[m[K'", msg);
+[2.288s]       |                                                          [01;36m[K~^[m[K
+[2.288s]       |                                                           [01;36m[K|[m[K
+[2.288s]       |                                                           [01;36m[Kchar*[m[K
+[7.591s] [100%] [32m[1mLinking CXX executable listener[0m
+[8.008s] [100%] Built target listener
+[8.016s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[8.040s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+[8.044s] -- Install configuration: ""
+[8.044s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker
+[8.044s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/talker
+[8.044s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener
+[8.047s] -- Set runtime path of "/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[8.047s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[8.047s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[8.048s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[8.048s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[8.048s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[8.048s] -- Installing: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[8.048s] -- Up-to-date: /home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[8.050s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub

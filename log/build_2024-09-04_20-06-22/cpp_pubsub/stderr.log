@@ -1,0 +1,19 @@
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:84:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+   84 |   sensor_msgs::msg::Image::SharedPtr msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", [01;31m[Kimg[m[K).toImageMsg();
+      |                                                                                                [01;31m[K^~~[m[K
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:86:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+   86 |   [01;31m[Kros[m[K::Rate loop_rate(5);
+      |   [01;31m[K^~~[m[K
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:87:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’ has no member named ‘[01m[Kok[m[K’
+   87 |   while (node.[01;31m[Kok[m[K()) {
+      |               [01;31m[K^~[m[K
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:89:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspinOnce[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+   89 |     rclcpp::[01;31m[KspinOnce[m[K();
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+   90 |     [01;31m[Kloop_rate[m[K.sleep();
+      |     [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

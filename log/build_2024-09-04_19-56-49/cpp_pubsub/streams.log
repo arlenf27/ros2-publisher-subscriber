@@ -1,0 +1,126 @@
+[0.004s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.021s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.086s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.086s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.103s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.105s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.108s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.117s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.146s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.146s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.203s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.236s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[0.268s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.311s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.311s] -- Configured cppcheck include dirs: 
+[0.311s] -- Configured cppcheck exclude dirs and/or files: 
+[0.311s] -- Added test 'lint_cmake' to check CMake code style
+[0.311s] -- Added test 'uncrustify' to check C / C++ code style
+[0.311s] -- Configured uncrustify additional arguments: 
+[0.311s] -- Added test 'xmllint' to check XML markup files
+[0.312s] -- Configuring done
+[0.319s] -- Generating done
+[0.320s] -- Build files have been written to: /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+[0.333s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.342s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.350s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.351s] [ 75%] Built target listener
+[1.496s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:29[m[K:
+[1.496s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.h:32:89:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead[m[K’
+[1.496s]    32 | #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[1.496s]       |                                                                                         [01;36m[K^[m[K
+[1.752s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.752s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:79:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.752s]    79 |   [01;31m[Kros[m[K::NodeHandle nh;
+[1.752s]       |   [01;31m[K^~~[m[K
+[1.755s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:80:38:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+[1.755s]    80 |   image_transport::ImageTransport it([01;31m[Knh[m[K);
+[1.755s]       |                                      [01;31m[K^~[m[K
+[1.764s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:82:39:[m[K [01;31m[Kerror: [m[K‘[01m[KCV_LOAD_IMAGE_COLOR[m[K’ was not declared in this scope
+[1.764s]    82 |   cv::Mat image = cv::imread(argv[1], [01;31m[KCV_LOAD_IMAGE_COLOR[m[K);
+[1.764s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.766s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:84:16:[m[K [01;31m[Kerror: [m[K‘[01m[KImagePtr[m[K’ is not a member of ‘[01m[Ksensor_msgs[m[K’
+[1.766s]    84 |   sensor_msgs::[01;31m[KImagePtr[m[K msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
+[1.766s]       |                [01;31m[K^~~~~~~~[m[K
+[1.766s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:86:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.766s]    86 |   [01;31m[Kros[m[K::Rate loop_rate(5);
+[1.766s]       |   [01;31m[K^~~[m[K
+[1.766s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:88:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[1.766s]    88 |     pub.publish([01;31m[Kmsg[m[K);
+[1.766s]       |                 [01;31m[K^~~[m[K
+[1.768s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:88:17:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.768s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.768s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:27[m[K:
+[1.768s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.768s]    27 | namespace [01;36m[Kmsg[m[K
+[1.768s]       |           [01;36m[K^~~[m[K
+[1.768s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.769s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:27[m[K:
+[1.769s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.769s]    27 | namespace [01;36m[Kmsg[m[K
+[1.769s]       |           [01;36m[K^~~[m[K
+[1.769s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.769s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:27[m[K:
+[1.769s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.769s]    27 | namespace [01;36m[Kmsg[m[K
+[1.769s]       |           [01;36m[K^~~[m[K
+[1.769s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[1.769s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:28[m[K:
+[1.769s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.769s]    27 | namespace [01;36m[Kmsg[m[K
+[1.769s]       |           [01;36m[K^~~[m[K
+[1.769s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:7[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:38[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:39[m[K,
+[1.769s]                  from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.h:34[m[K,
+[1.770s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:29[m[K:
+[1.770s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[1.770s]    31 | namespace [01;36m[Kmsg[m[K
+[1.770s]       |           [01;36m[K^~~[m[K
+[1.770s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[1.770s]    89 |     [01;31m[Kros[m[K::spinOnce();
+[1.770s]       |     [01;31m[K^~~[m[K
+[1.773s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/publisher_member_function.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+[1.774s]    90 |     [01;31m[Kloop_rate[m[K.sleep();
+[1.774s]       |     [01;31m[K^~~~~~~~~[m[K
+[2.202s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[2.202s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+[2.202s] gmake: *** [Makefile:146: all] Error 2
+[2.203s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

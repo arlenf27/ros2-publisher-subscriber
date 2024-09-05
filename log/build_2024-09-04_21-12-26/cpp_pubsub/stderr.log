@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o: in function `imageCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)':
+subscriber_member_function.cpp:(.text+0x120): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+/usr/bin/ld: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o: in function `main':
+subscriber_member_function.cpp:(.text+0x324): undefined reference to `cv::namedWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: subscriber_member_function.cpp:(.text+0x3f8): undefined reference to `cv::destroyWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:181: listener] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

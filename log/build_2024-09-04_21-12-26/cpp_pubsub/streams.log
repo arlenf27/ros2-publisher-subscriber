@@ -1,0 +1,15 @@
+[0.004s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.031s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.047s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.048s] [ 75%] Built target talker
+[4.192s] [100%] [32m[1mLinking CXX executable listener[0m
+[4.490s] /usr/bin/ld: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o: in function `imageCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > const> const&)':
+[4.490s] subscriber_member_function.cpp:(.text+0x120): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[4.491s] /usr/bin/ld: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o: in function `main':
+[4.491s] subscriber_member_function.cpp:(.text+0x324): undefined reference to `cv::namedWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+[4.491s] /usr/bin/ld: subscriber_member_function.cpp:(.text+0x3f8): undefined reference to `cv::destroyWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[4.534s] collect2: error: ld returned 1 exit status
+[4.534s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:181: listener] Error 1
+[4.535s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[4.535s] gmake: *** [Makefile:146: all] Error 2
+[4.536s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

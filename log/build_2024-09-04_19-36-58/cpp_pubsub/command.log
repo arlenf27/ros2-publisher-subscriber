@@ -1,0 +1,4 @@
+Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub
+Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '0': /usr/bin/cmake --install /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub

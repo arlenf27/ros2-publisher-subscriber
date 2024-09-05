@@ -1,0 +1,125 @@
+[0.006s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.051s] [ 50%] Built target talker
+[0.053s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[1.442s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:52:39:[m[K [01;31m[Kerror: [m[K‘[01m[KImagePtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+[1.442s]    52 | void imageCallback(const sensor_msgs::[01;31m[KImagePtr[m[K& msg)
+[1.442s]       |                                       [01;31m[K^~~~~~~~[m[K
+[1.442s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In function ‘[01m[Kvoid imageCallback(const int&)[m[K’:
+[1.442s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:56:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoCvShare(const int&, const char [5])[m[K’
+[1.442s]    56 |     cv::imshow("view", [01;31m[Kcv_bridge::toCvShare(msg, "bgr8")[m[K->image);
+[1.442s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[1.442s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:30[m[K:
+[1.442s] [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:232:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImageConstPtr cv_bridge::toCvShare(const ConstSharedPtr&, const string&)[m[K’
+[1.442s]   232 | CV_BRIDGE_EXPORT CvImageConstPtr [01;36m[KtoCvShare[m[K(
+[1.442s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[1.442s] [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:233:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst int[m[K’ to ‘[01m[Kconst ConstSharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&[m[K’}
+[1.442s]   233 |   [01;36m[Kconst sensor_msgs::msg::Image::ConstSharedPtr & source[m[K,
+[1.442s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.442s] [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:260:34:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImageConstPtr cv_bridge::toCvShare(const Image&, const std::shared_ptr<const void>&, const string&)[m[K’
+[1.442s]   260 | CV_BRIDGE_EXPORT CvImageConstPtr [01;36m[KtoCvShare[m[K(
+[1.442s]       |                                  [01;36m[K^~~~~~~~~[m[K
+[1.442s] [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:154:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst int[m[K’ to ‘[01m[Kconst Image&[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >&[m[K’}
+[1.442s]   154 |     [01;36m[Kconst sensor_msgs::msg::Image & source[m[K,
+[1.442s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.442s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.442s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.442s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26[m[K:
+[1.442s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:60:5:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+[1.443s]    60 |     [01;31m[KRCLCPP_ERROR[m[K("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+[1.443s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.443s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.443s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.443s]                  from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26[m[K:
+[1.443s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:60:5:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Could not convert from \'%s\' to \'bgr8\'.")[m[K’, which is of non-class type ‘[01m[Kconst char [39][m[K’
+[1.443s]    60 |     [01;31m[KRCLCPP_ERROR[m[K("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+[1.443s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:60:5:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Could not convert from \'%s\' to \'bgr8\'.")[m[K’, which is of non-class type ‘[01m[Kconst char [39][m[K’
+[1.446s]    60 |     [01;31m[KRCLCPP_ERROR[m[K("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+[1.446s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:60:63:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[1.446s]    60 |     RCLCPP_ERROR("Could not convert from '%s' to 'bgr8'.", msg[01;31m[K->[m[Kencoding.c_str());
+[1.446s]       |                                                               [01;31m[K^~[m[K
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::subscribe(const char [11], int, void (&)(const int&))[m[K’
+[1.446s]    72 |   image_transport::Subscriber sub = [01;31m[Kit.subscribe("imagetopic", 10, imageCallback)[m[K;
+[1.446s]       |                                     [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.446s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:188:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)[m[K’
+[1.446s]   188 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.446s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:188:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const int&)[m[K’
+[1.446s]    72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback)[m[K;
+[1.446s]       |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.446s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:202:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+[1.446s]   202 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.446s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:202:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const int&)[m[K’
+[1.446s]    72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback)[m[K;
+[1.446s]       |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.446s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:217:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)[m[K’
+[1.446s]   217 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.446s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.446s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:217:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.446s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const int&)[m[K’
+[1.446s]    72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback)[m[K;
+[1.447s]       |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.447s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:232:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+[1.447s]   232 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.447s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:232:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.447s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const int&)[m[K’
+[1.447s]    72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback)[m[K;
+[1.447s]       |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.447s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:136:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)[m[K’
+[1.447s]   136 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.447s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:138:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid(const int&)[m[K’ to ‘[01m[Kconst Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&[m[K’}
+[1.447s]   138 |     [01;36m[Kconst Subscriber::Callback & callback[m[K,
+[1.447s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+[1.447s]   146 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.447s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:146:14:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 3 provided
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:157:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)[m[K’ (near match)
+[1.447s]   157 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.447s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:157:14:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[1.447s] [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:68:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kvoid (*)(const int&)[m[K’ to ‘[01m[Kvoid (*)(const ImageConstPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’} [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.447s]    72 |   image_transport::Subscriber sub = it.subscribe("imagetopic", 10, [01;31m[KimageCallback[m[K);
+[1.447s]       |                                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[1.447s]       |                                                                    [01;31m[K|[m[K
+[1.447s]       |                                                                    [01;31m[Kvoid (*)(const int&)[m[K
+[1.447s] In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:172:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+[1.447s]   172 |   Subscriber [01;36m[Ksubscribe[m[K(
+[1.447s]       |              [01;36m[K^~~~~~~~~[m[K
+[1.447s] [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:172:14:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 3 provided
+[2.654s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[2.655s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+[2.655s] gmake: *** [Makefile:146: all] Error 2
+[2.656s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2

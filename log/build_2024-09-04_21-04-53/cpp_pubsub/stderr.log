@@ -1,0 +1,60 @@
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::subscribe(const char [11], int, void (&)(const SharedPtr&), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&)[m[K’
+   72 |   image_transport::Subscriber sub = [01;31m[Kit.subscribe("imagetopic", 10, imageCallback, node, std::placeholders::_1)[m[K;
+      |                                     [01;31m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:188:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)[m[K’
+  188 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:188:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const SharedPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+   72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback, node, std::placeholders::_1)[m[K;
+      |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:202:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  202 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:202:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const SharedPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+   72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback, node, std::placeholders::_1)[m[K;
+      |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:217:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)[m[K’
+  217 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:217:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const SharedPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+   72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback, node, std::placeholders::_1)[m[K;
+      |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:232:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  232 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:232:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:72:49:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const ImageConstPtr&)[m[K’ and ‘[01m[Kvoid (*)(const SharedPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+   72 |   image_transport::Subscriber sub = [01;36m[Kit.subscribe("imagetopic", 10, imageCallback, node, std::placeholders::_1)[m[K;
+      |                                     [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:28[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:136:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)[m[K’
+  136 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:138:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid(const SharedPtr&)[m[K’ {aka ‘[01m[Kvoid(const std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kconst Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&[m[K’}
+  138 |     [01;36m[Kconst Subscriber::Callback & callback[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  146 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:146:14:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 5 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:157:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)[m[K’
+  157 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:157:14:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 5 provided
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:172:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*, rclcpp::SubscriptionOptions)[m[K’
+  172 |   Subscriber [01;36m[Ksubscribe[m[K(
+      |              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:175:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Kconst image_transport::TransportHints*[m[K’
+  175 |     [01;36m[Kconst TransportHints * transport_hints[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

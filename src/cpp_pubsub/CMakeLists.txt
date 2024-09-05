@@ -15,14 +15,17 @@ if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   find_package(rclcpp REQUIRED)
   find_package(std_msgs REQUIRED)
+  find_package(image_transport REQUIRED)
+  find_package(cv_bridge REQUIRED)
+  find_package(OpenCV REQUIRED)
 
   add_executable(talker src/publisher_member_function.cpp)
-  ament_target_dependencies(talker rclcpp std_msgs)
+  ament_target_dependencies(talker rclcpp std_msgs image_transport cv_bridge OpenCV)
 
   install(TARGETS talker DESTINATION lib/${PROJECT_NAME})
 
   add_executable(listener src/subscriber_member_function.cpp)
-  ament_target_dependencies(listener rclcpp std_msgs)
+  ament_target_dependencies(listener rclcpp std_msgs image_transport cv_bridge OpenCV)
 
   install(TARGETS talker listener DESTINATION lib/${PROJECT_NAME})
 

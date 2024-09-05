@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000105] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.000124] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.004354] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.005235] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.005266] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub', '--', '-j2', '-l2'], 'cwd': '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'arlen1'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arlen1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2104'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'arlen1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arlen1'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/arlen-VMWareAppleSilicon:@/tmp/.ICE-unix/1546,unix/arlen-VMWareAppleSilicon:/tmp/.ICE-unix/1546'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3ecacd66_9386_451c_9a99_2e4127e99739'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O3UUT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arlen1/Documents/ROS2 Tests/Test1/install/cpp_pubsub:/opt/ros/humble')]), 'shell': False}
+[0.051630] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target listener\x1b[0m\n'}
+[0.051759] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.067745] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.099666] (-) TimerEvent: {}
+[0.200509] (-) TimerEvent: {}
+[0.301688] (-) TimerEvent: {}
+[0.402973] (-) TimerEvent: {}
+[0.503852] (-) TimerEvent: {}
+[0.605176] (-) TimerEvent: {}
+[0.706473] (-) TimerEvent: {}
+[0.807759] (-) TimerEvent: {}
+[0.909094] (-) TimerEvent: {}
+[1.010372] (-) TimerEvent: {}
+[1.111713] (-) TimerEvent: {}
+[1.213016] (-) TimerEvent: {}
+[1.313557] (-) TimerEvent: {}
+[1.414868] (-) TimerEvent: {}
+[1.515774] (-) TimerEvent: {}
+[1.616983] (-) TimerEvent: {}
+[1.718181] (-) TimerEvent: {}
+[1.819411] (-) TimerEvent: {}
+[1.920643] (-) TimerEvent: {}
+[2.021858] (-) TimerEvent: {}
+[2.123071] (-) TimerEvent: {}
+[2.223377] (-) TimerEvent: {}
+[2.271101] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensors_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.271249] (cpp_pubsub) StderrLine: {'line': b'   66 |   void topic_callback(const \x1b[01;31m\x1b[Ksensors_msgs\x1b[m\x1b[K::msg::Image::SharedPtr msg) const\n'}
+[2.271289] (cpp_pubsub) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.271323] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.271355] (cpp_pubsub) StderrLine: {'line': b'   66 |   void topic_callback(const sensors_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KImage::SharedPtr msg) const\n'}
+[2.271385] (cpp_pubsub) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.271415] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.271447] (cpp_pubsub) StderrLine: {'line': b'   66 |   void topic_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst sensors_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KImage::SharedPtr msg) const\n'}
+[2.271478] (cpp_pubsub) StderrLine: {'line': b'      |                      \x1b[34m\x1b[K~\x1b[m\x1b[K                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.271508] (cpp_pubsub) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.271537] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.271567] (cpp_pubsub) StderrLine: {'line': b'   66 |   void topic_callback(const sensors_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Image::SharedPtr msg) const\n'}
+[2.271596] (cpp_pubsub) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.271630] (cpp_pubsub) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.275006] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:66:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImage\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.275118] (cpp_pubsub) StderrLine: {'line': b'   66 |   void topic_callback(const sensors_msgs::msg::\x1b[01;31m\x1b[KImage\x1b[m\x1b[K::SharedPtr msg) const\n'}
+[2.275150] (cpp_pubsub) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.286395] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensors_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.286515] (cpp_pubsub) StderrLine: {'line': b'   70 |   rclcpp::Subscription<\x1b[01;31m\x1b[Ksensors_msgs\x1b[m\x1b[K::msg::Image>::SharedPtr subscription_;\n'}
+[2.286553] (cpp_pubsub) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.286585] (cpp_pubsub) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Ksensor_msgs\x1b[m\x1b[K\n'}
+[2.286656] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.286691] (cpp_pubsub) StderrLine: {'line': b'   70 |   rclcpp::Subscription<sensors_msgs::msg::Image\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr subscription_;\n'}
+[2.286721] (cpp_pubsub) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.286750] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[2.286780] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[2.286809] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[2.286838] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.286882] (cpp_pubsub) StderrLine: {'line': b'   70 |   rclcpp::Subscription<sensors_msgs::msg::Image>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K subscription_;\n'}
+[2.286913] (cpp_pubsub) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.286942] (cpp_pubsub) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.289037] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:70:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.289100] (cpp_pubsub) StderrLine: {'line': b'   70 |   rclcpp::Subscription<sensors_msgs::msg::Image>::SharedPtr \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K;\n'}
+[2.289136] (cpp_pubsub) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.289165] (cpp_pubsub) StderrLine: {'line': b'      |                                                             \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[2.304154] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImageSubscriber::ImageSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.304219] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.304252] (cpp_pubsub) StderrLine: {'line': b'   61 |     \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<sensors_msgs::msg::Image>(\n'}
+[2.304282] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.304312] (cpp_pubsub) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[2.314417] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensors_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.314489] (cpp_pubsub) StderrLine: {'line': b'   61 |     subscription_ = this->create_subscription<\x1b[01;31m\x1b[Ksensors_msgs\x1b[m\x1b[K::msg::Image>(\n'}
+[2.314519] (cpp_pubsub) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.314549] (cpp_pubsub) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[Ksensor_msgs\x1b[m\x1b[K\n'}
+[2.314578] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[2.314608] (cpp_pubsub) StderrLine: {'line': b'   61 |     subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<sensors_msgs::msg::Image>\x1b[m\x1b[K(\n'}
+[2.314637] (cpp_pubsub) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.317373] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KImageSubscriber::create_subscription<<expression error> >(const char [9], int, std::_Bind_helper<false, void (ImageSubscriber::*)(...), ImageSubscriber*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.317427] (cpp_pubsub) StderrLine: {'line': b'   61 |     subscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<sensors_msgs::msg::Image>(\x1b[m\x1b[K\n'}
+[2.317457] (cpp_pubsub) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.317486] (cpp_pubsub) StderrLine: {'line': b'   62 | \x1b[01;31m\x1b[K      "imgtopic", 10, std::bind(&ImageSubscriber::topic_callback, this, _1))\x1b[m\x1b[K;\n'}
+[2.317516] (cpp_pubsub) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.317587] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[2.317628] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[2.317658] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[2.317687] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.317716] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:26\x1b[m\x1b[K:\n'}
+[2.317746] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.317780] (cpp_pubsub) StderrLine: {'line': b'   92 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_subscription(\n'}
+[2.317810] (cpp_pubsub) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.317839] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.317869] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arlen1/Documents/ROS2 Tests/Test1/src/cpp_pubsub/src/subscriber_member_function.cpp:61:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.317901] (cpp_pubsub) StderrLine: {'line': b'   61 |     subscription_ = \x1b[01;31m\x1b[Kthis->create_subscription<sensors_msgs::msg::Image>(\x1b[m\x1b[K\n'}
+[2.317930] (cpp_pubsub) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.317974] (cpp_pubsub) StderrLine: {'line': b'   62 | \x1b[01;31m\x1b[K      "imgtopic", 10, std::bind(&ImageSubscriber::topic_callback, this, _1))\x1b[m\x1b[K;\n'}
+[2.318006] (cpp_pubsub) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.323965] (-) TimerEvent: {}
+[2.425184] (-) TimerEvent: {}
+[2.526385] (-) TimerEvent: {}
+[2.627586] (-) TimerEvent: {}
+[2.727911] (-) TimerEvent: {}
+[2.829123] (-) TimerEvent: {}
+[2.930326] (-) TimerEvent: {}
+[3.031530] (-) TimerEvent: {}
+[3.132745] (-) TimerEvent: {}
+[3.233936] (-) TimerEvent: {}
+[3.335145] (-) TimerEvent: {}
+[3.435927] (-) TimerEvent: {}
+[3.537315] (-) TimerEvent: {}
+[3.638549] (-) TimerEvent: {}
+[3.739812] (-) TimerEvent: {}
+[3.841010] (-) TimerEvent: {}
+[3.942065] (-) TimerEvent: {}
+[4.043233] (-) TimerEvent: {}
+[4.130661] (cpp_pubsub) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[4.130815] (cpp_pubsub) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/listener.dir/all] Error 2\n'}
+[4.130882] (cpp_pubsub) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.132210] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[4.143417] (-) TimerEvent: {}
+[4.152682] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[4.165026] (-) EventReactorShutdown: {}

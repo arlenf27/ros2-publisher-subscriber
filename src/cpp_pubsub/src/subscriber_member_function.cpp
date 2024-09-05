@@ -19,12 +19,18 @@
  *
  * Modifications Made: 
  * 1. Left comments on relevant code
+ * 2. Added method to convert from sensor img to Open CV image
+ * 3. Added code in main() to create image subscriber node
  */
 
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "image_transport/image_transport.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "cv_bridge/cv_bridge.h"
+
 using std::placeholders::_1;
 
 class MinimalSubscriber : public rclcpp::Node
@@ -40,15 +46,36 @@ public:
 private:
   void topic_callback(const std_msgs::msg::String::SharedPtr msg) const
   {
-    RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+    RCLCPP_INFO(this->get_logger(), "Subscribing String: '%s'", msg->data.c_str());
   }
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
 };
 
+void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg)
+{
+  try
+  {
+    cv::imshow("view", cv_bridge::toCvShare(msg, "rgb8")->image);
+  }
+  catch (cv_bridge::Exception& e)
+  {
+    auto logger = rclcpp::get_logger("my_subscriber");
+    RCLCPP_ERROR(logger, "Could not convert from '%s' to 'rgb8'.", msg->encoding.c_str());
+    RCLCPP_ERROR(logger, "%s", e.what());
+  }
+}
+
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<MinimalSubscriber>());
+  //rclcpp::spin(std::make_shared<MinimalSubscriber>());
+  auto node = rclcpp::Node::make_shared("listener");
+  cv::namedWindow("view");
+  image_transport::ImageTransport it(node);
+  image_transport::Subscriber sub = it.subscribe("imagetopic", 10, imageCallback);
+  rclcpp::spin(node);
+  cv::destroyWindow("view");
+
   rclcpp::shutdown();
   return 0;
 }

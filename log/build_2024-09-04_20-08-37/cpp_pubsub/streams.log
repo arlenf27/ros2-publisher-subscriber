@@ -1,0 +1,12 @@
+[0.005s] Invoking command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.051s] [ 50%] Built target listener
+[0.055s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.611s] [100%] [32m[1mLinking CXX executable talker[0m
+[2.879s] /usr/bin/ld: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: in function `main':
+[2.879s] publisher_member_function.cpp:(.text+0x188): undefined reference to `cv::waitKey(int)'
+[2.901s] collect2: error: ld returned 1 exit status
+[2.901s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:181: talker] Error 1
+[2.902s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/talker.dir/all] Error 2
+[2.902s] gmake: *** [Makefile:146: all] Error 2
+[2.904s] Invoked command in '/home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/arlen1/Documents/ROS2 Tests/Test1/build/cpp_pubsub -- -j2 -l2
