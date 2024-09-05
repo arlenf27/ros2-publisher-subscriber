@@ -16,11 +16,15 @@
  * Modified by Arlen Feng 4 September 2024
  *
  * Image Publisher
+ * 
+ * Minimal Publisher left by base turorial code still exists but is not used. 
  *
  * Modifications Made: 
  * 1. Left comments on relevant code
  * 2. Created code to publish image
  * 3. Created code to convert image from Open CV format to sensors img
+ * 4. MinimalPublisher (that publishes Strings) is not used, but image publisher is used currently
+ * 5. Image publisher will continuously publish data until terminated
  */
 
 #include <chrono>
@@ -35,9 +39,10 @@
 
 using namespace std::chrono_literals;
 
-/* This example creates a subclass of Node and uses std::bind() to register a
- * member function as a callback from the timer. */
-
+/** 
+ * This MinimalPublisher creates a subclass of Node and uses std::bind() to register a
+ * member function as a callback from the timer. It is currently NOT used. 
+ */
 class MinimalPublisher : public rclcpp::Node
 {
 public:
@@ -76,9 +81,17 @@ int main(int argc, char * argv[])
    */
   rclcpp::init(argc, argv);
   /*
-   * Processes data from the node
+   * Processes data from the node for MinimalPublisher
+   * Enable MinimalPublisher by uncommenting this line, but image publisher will NOT work unless MinimalPublisher is not processing
    */
-  //rclcpp::spin(std::make_shared<MinimalPublisher>());
+  // rclcpp::spin(std::make_shared<MinimalPublisher>());
+
+  /*
+   * Creates new node for image transport
+   * Uses OpenCV to read in an image in RGB from file passed in at argv[1] 
+   * Converts CV Mat image to sensor msgs to publish
+   * Publishes image data continuously until terminated 
+   */
   auto node = rclcpp::Node::make_shared("talker");
   image_transport::ImageTransport it(node);
   image_transport::Publisher pub = it.advertise("imagetopic", 10);

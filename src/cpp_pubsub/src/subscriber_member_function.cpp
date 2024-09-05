@@ -21,6 +21,8 @@
  * 1. Left comments on relevant code
  * 2. Added method to convert from sensor img to Open CV image
  * 3. Added code in main() to create image subscriber node
+ * 4. MinimalSubscriber is curently not used, but image subscriber is
+ * 5. Image subscriber continuously subscribes to topic until terminated
  */
 
 #include <memory>
@@ -55,6 +57,9 @@ void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg)
 {
   try
   {
+    /*
+     * Converts using cv_bridge - encoding is RGB8
+     */
     cv::imshow("view", cv_bridge::toCvShare(msg, "rgb8")->image);
   }
   catch (cv_bridge::Exception& e)
@@ -68,8 +73,19 @@ void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg)
 int main(int argc, char * argv[])
 {
   rclcpp::init(argc, argv);
-  //rclcpp::spin(std::make_shared<MinimalSubscriber>());
+  
+  /*
+   * If enabled, MinimalSubscriber will cause image subscriber to not run continuously. 
+   */
+  // rclcpp::spin(std::make_shared<MinimalSubscriber>());
+
   auto node = rclcpp::Node::make_shared("listener");
+
+  /*
+   * Creates new window to display image converted from sensors msg to OpenCV format
+   * Image_transport subscribes to topic
+   * imageCallback is called continuously until terminated
+   */
   cv::namedWindow("view");
   cv::startWindowThread();
   image_transport::ImageTransport it(node);
