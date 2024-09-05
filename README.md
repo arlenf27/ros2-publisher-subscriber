@@ -8,9 +8,10 @@ This program was only tested on Ubuntu 22 ARM64!
 3. Navigate to the root of the repository. 
 4. Run `. install/setup.bash`. 
 5. Run `ros2 run cpp_pubsub talker [NAME_OF_IMAGE_FILE.jpg or NAME_OF_IMAGE_FILE.jpeg]` (Other image types have not been tested, but may work)
-6. While the talker (publisher) is running, open a new terminal instance/tab and navigate to the same root directory. 
-7. Run `ros2 run cpp_pubsub listener`. The image should open in a new window and should continuously open after the window is closed. 
-8. Use `Ctrl-C` to terminate both the listener and talker. 
+6. While the talker (publisher) is running, open a new terminal instance/tab and navigate to the same root directory.
+7. Run `. install/setup.bash` again in this new tab/terminal instance.
+8. Run `ros2 run cpp_pubsub listener`. The image should open in a new window and should continuously open after the window is closed. 
+9. Use `Ctrl-C` to terminate both the listener and talker. 
 
 ## Building the Program
 1. Make sure that ROS2 is installed properly. 
