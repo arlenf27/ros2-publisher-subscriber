@@ -19,7 +19,14 @@ This program was only tested on Ubuntu 22 ARM64!
 3. Navigate to the root of the repository. 
 4. Check and install any missing dependencies: `rosdep install -i --from-path src --rosdistro humble -y`
 5. Build the program: `colcon build --packages-select cpp_pubsub`
-6. Follow steps 3 - 8 of "Running the Built Program" section to run the built program. 
+6. Follow steps 3 - 8 of "Running the Built Program" section to run the built program.
+7. **Note**: If an error "The current CMakeCache.txt directory is different than the directory where CMakeCache.txt was created. " is displayed, then delete the "build" directory, and then rebuild. 
+
+## Modifying the Program to Publish/Subscribe with Strings Instead of Images
+1. Uncomment line 87 (spin()) of the "src/cpp_pubsub/src/publisher_member_function.cpp" file. 
+2. Uncomment line 80 (spin()) of the "src/cpp_pubsub/src/subscriber_member_function.cpp" file.
+3. Rebuild the program. 
+4. There will be an error (what(): failed to create guard condition) thrown when the user terminates the program via `Ctr-C`; **this is expected**. 
 
 ## How This Program Was Developed
 Note: Most of the "handwritten" code is in "/src/cpp_pubsub/src/". The two C++ files are the [publisher] (src/cpp_pubsub/src/publisher_member_function.cpp) and [subscriber] (src/cpp_pubsub/src/subscriber_member_function.cpp) source code. The CMakeLists.txt and package.xml files are located in "/src/cpp_pubsub/". 
